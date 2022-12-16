@@ -27,7 +27,7 @@ services:
     privileged: true
     restart: always
     volumes:
-      - ./config/:/etc/inverter/
+      - ./inverter/config/:/etc/inverter/
 
     devices:
       #  - "/dev/mem:/dev/mem"

@@ -1,2 +1,5 @@
 .idea
 ha.iml
+mosquitto/data
+mosquitto/log
+home-assistant
