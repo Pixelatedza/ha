@@ -1,5 +1,5 @@
 {
-    "server": "localhost",
+    "server": "mosquitto",
     "port": "1883",
     "topic": "homeassistant",
     "devicename": "Inverter",
