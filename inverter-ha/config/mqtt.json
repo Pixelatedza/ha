@@ -3,9 +3,9 @@
     "port": "1883",
     "topic": "homeassistant",
     "devicename": "Inverter",
-    "manufacturer": "Iconica",
-    "model": "ICBM300024",
-    "serial": "33A856E1",
+    "manufacturer": "Axpert",
+    "model": "SOL-I-AX-5P",
+    "serial": "92932006101948",
     "ver": "6.23_1.09",
     "username": "hass",
     "password": "Secret@12"
