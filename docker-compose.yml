@@ -23,7 +23,7 @@ services:
 
   inv1:
     image: bushrangers/ha-voltronic-mqtt
-    container_name: voltronic-mqtt
+    container_name: inv1
     privileged: true
     restart: always
     volumes:
@@ -46,7 +46,7 @@ services:
 
   inv2:
     image: bushrangers/ha-voltronic-mqtt
-    container_name: voltronic-mqtt
+    container_name: inv2
     privileged: true
     restart: always
     volumes:
