@@ -21,7 +21,7 @@ services:
       - 9001:9001
     restart: "unless-stopped"
 
-  voltronic-mqtt:
+  inv1:
     image: bushrangers/ha-voltronic-mqtt
     container_name: voltronic-mqtt
     privileged: true
@@ -36,6 +36,31 @@ services:
       - /dev/bus/usb:/dev/bus/usb:rwm
       - /dev/ttyUSB0:/dev/ttyUSB0:rwm
       - /dev/ttyUSB1:/dev/ttyUSB1:rwm
+      - /dev/hidraw0:/dev/hidraw0:rwm
+      - /dev/hidraw1:/dev/hidraw1:rwm
+
+      # Serial Port Mapping...
+      - /dev/ttyS0:/dev/ttyS0
+      - /dev/ttyS1:/dev/ttyS1
+      - /dev/ttyS2:/dev/ttyS2
+
+  inv2:
+    image: bushrangers/ha-voltronic-mqtt
+    container_name: voltronic-mqtt
+    privileged: true
+    restart: always
+    volumes:
+      - ./inverter2/config/:/etc/inverter/
+
+    devices:
+      #  - "/dev/mem:/dev/mem"
+
+      # USB Port Mapping
+      - /dev/bus/usb:/dev/bus/usb:rwm
+      - /dev/ttyUSB0:/dev/ttyUSB0:rwm
+      - /dev/ttyUSB1:/dev/ttyUSB1:rwm
+      - /dev/hidraw0:/dev/hidraw0:rwm
+      - /dev/hidraw1:/dev/hidraw1:rwm
 
       # Serial Port Mapping...
       - /dev/ttyS0:/dev/ttyS0
