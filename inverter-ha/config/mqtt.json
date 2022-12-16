@@ -1,0 +1,12 @@
+{
+    "server": "localhost",
+    "port": "1883",
+    "topic": "homeassistant",
+    "devicename": "Inverter",
+    "manufacturer": "Iconica",
+    "model": "ICBM300024",
+    "serial": "33A856E1",
+    "ver": "6.23_1.09",
+    "username": "hass",
+    "password": "Secret@12"
+}

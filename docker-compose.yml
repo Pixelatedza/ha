@@ -20,3 +20,34 @@ services:
       - 1883:1883
       - 9001:9001
     restart: "unless-stopped"
+
+  inverter:
+
+    # Uncomment for nedkelly's dockerhub image We're now (finally) supporting Multi-Arch builds (via Github actions) on Docker Hub!
+    # image: bushrangers/ha-voltronic-mqtt
+
+    # Uncomment if you want to build your own local version.
+    build:
+      context: inverter-ha
+      dockerfile: Dockerfile.dev
+
+    container_name: inverter
+
+    privileged: true
+    restart: always
+
+    volumes:
+      - "./inverter-ha/config/:/etc/inverter/"
+
+    devices:
+      #  - "/dev/mem:/dev/mem"
+
+      # USB Port Mapping
+      - /dev/bus/usb:/dev/bus/usb:rwm
+      - /dev/ttyUSB0:/dev/ttyUSB0:rwm
+      - /dev/ttyUSB1:/dev/ttyUSB1:rwm
+
+      # Serial Port Mapping...
+      - /dev/ttyS0:/dev/ttyS0
+      - /dev/ttyS1:/dev/ttyS1
+      - /dev/ttyS2:/dev/ttyS2
