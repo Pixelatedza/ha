@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "core.restore_state",
+  "data": [
+    {
+      "state": {
+        "entity_id": "person.riaan_eloff",
+        "state": "unknown",
+        "attributes": {
+          "editable": true,
+          "id": "riaan_eloff",
+          "user_id": "9bd23d10e9254ec19e6c13c697a20c6e",
+          "friendly_name": "Riaan Eloff"
+        },
+        "last_changed": "2022-12-16T15:24:12.444887+00:00",
+        "last_updated": "2022-12-16T15:24:15.799513+00:00",
+        "context": {
+          "id": "01GMDRJE1Q2MGVADQDGYCPV0TQ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-12-16T15:39:15.801190+00:00"
+    }
+  ]
+}

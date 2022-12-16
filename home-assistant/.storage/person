@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "minor_version": 1,
+  "key": "person",
+  "data": {
+    "items": [
+      {
+        "name": "Riaan Eloff",
+        "user_id": "9bd23d10e9254ec19e6c13c697a20c6e",
+        "device_trackers": [],
+        "id": "riaan_eloff"
+      }
+    ]
+  }
+}

@@ -1,0 +1,2 @@
+- Mosquitto - MQTT Broker
+- Home Assistant - Home automation
